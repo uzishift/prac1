@@ -31,9 +31,9 @@ namespace Lib_12
             for (int i = 0; i < row.Length; i++)
             {
                 string numberString = "";
-                while (Int32.TryParse(row[i].ToString(), out int temp))
+                while (Int32.TryParse(row[i].ToString(), out int temper))
                 {
-                    numberString += temp.ToString();
+                    numberString += temper.ToString();
                     i++;
                 }               
                 sum += Convert.ToInt32(numberString);
